@@ -1,0 +1,106 @@
+body {
+  background-color: #e3e7eb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 5% auto;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.349);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  width: 50%;
+  padding-top: 5%;
+  margin: auto;
+}
+
+.intro-text p {
+  text-align: justify;
+}
+
+.intro-text button {
+  font-size: larger;
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  border: 1px solid transparent;
+}
+
+.intro-text button:hover {
+  border: 1px solid orangered;
+  cursor: pointer;
+}
+
+.intro-text #download-button {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+
+.intro-text #download-button:hover p {
+  text-decoration: underline;
+}
+
+.intro-text #download-button p {
+  display: inline-block;
+}
+
+.intro-text #download-button img {
+  display: inline-block;
+  width: 1.3em;
+  height: 1.1em;
+  margin-bottom: -4px;
+  margin-left: 10px;
+}
+
+.social-media {
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.social-media img {
+  width: 10%;
+  height: 10%;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.social-media img:hover {
+  border: 2px solid orange;
+}
+
+.card {
+  width: 35%;
+  margin: 0 auto 5% auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.192);
+  border-radius: 10px;
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body h1 {
+  margin-bottom: 0;
+}
+
+.card-body p {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
