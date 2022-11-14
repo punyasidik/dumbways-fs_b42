@@ -24,9 +24,12 @@ body {
   text-align: justify;
 }
 
-.intro-text button {
+#contact-button {
+  text-decoration: none;
+}
+
+#contact-button button {
   font-size: larger;
-  display: block;
   background-color: black;
   color: white;
   padding: 5px 20px;
@@ -35,8 +38,8 @@ body {
   border: 1px solid transparent;
 }
 
-.intro-text button:hover {
-  border: 1px solid orangered;
+#contact-button button:hover {
+  border: 1px solid gray;
   cursor: pointer;
 }
 
