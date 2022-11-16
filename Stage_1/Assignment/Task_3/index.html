@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Task 3 DumbWays - asidikrdn</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-item">
+        <li>
+          <img src="img/logo-dumbways.png" alt="logo-dumbways" id="logo" />
+        </li>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">My Project</a></li>
+        <li class="contactme-button">
+          <button>Contact Me</button>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="intro">
+        <div class="intro-text">
+          <h1>Hi, I'm Sidik</h1>
+          <p>
+            I'am a student of Informatics Engineering (extension class) at Ibn
+            Khaldun University. The activity that I do apart from being a
+            student is actively learning web programming independently to
+            increase my skills. From these activities, I have created several
+            simple static and dynamic web pages.
+          </p>
+          <p>
+            I am interested in becoming a Professional Front-End Web Developer.
+            I have studied some basic web programming materials such as
+            <b>HTML</b>, <b>CSS</b>, and <b>Javascript</b>. I also studied some
+            Front-End Web Development Libraries like <b>Bootstrap</b>,
+            <b>ReactBootstrap</b> and <b>ReactJS</b>.
+          </p>
+          <a
+            href="https://wa.me/6287711356758"
+            target="_blank"
+            id="contact-button"
+          >
+            <button>contact</button>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1uSrHxAJ2rcZaeNVSfihRmsLC0Khoq41Z/view?usp=sharing"
+            target="_blank"
+            id="download-button"
+          >
+            <p>download CV</p>
+            <img src="img/download-button.png" alt="" />
+          </a>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/in/asidikrdn/" target="_blank"
+              ><img src="img/linkedin.png" alt=""
+            /></a>
+            <a href="https://www.instagram.com/asidikrdn/" target="_blank"
+              ><img src="img/instagram.png" alt=""
+            /></a>
+            <a href="https://facebook.com/sidik.rudini.7" target="_blank"
+              ><img src="img/facebook.png" alt=""
+            /></a>
+            <a href="https://twitter.com/asidikrdn" target="_blank"
+              ><img src="img/twitter.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="intro-card">
+          <div class="card-img">
+            <img src="img/profil.jpg" alt="Ahmad Sidik Rudini" />
+          </div>
+          <div class="card-body">
+            <h1>Ahmad Sidik Rudini</h1>
+            <p>Fullstack Developer</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact-form">
+        <h1>GET IN TOUCH</h1>
+        <form id="contactForm" action="">
+          <label for="nama">Nama</label>
+          <input type="text" name="nama" class="text-input" id="nama" />
+          <label for="email">Email</label>
+          <input type="text" name="email" class="text-input" id="email" />
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" class="text-input" id="phone" />
+          <label for="subject">Subject</label>
+          <select name="subject" class="text-input" id="subject">
+            <option value=""></option>
+            <option value="Let's Talk">Let's Talk</option>
+            <option value="Let's Meet">Let's Meet</option>
+          </select>
+          <label for="pesan">Your Message</label>
+          <textarea
+            name="pesan"
+            id="pesan"
+            class="text-input"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="submit-button">
+            <button type="submit">submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      let contactFormNode = document.getElementById("contactForm");
+      // console.log(contactFormNode);
+
+      contactFormNode.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let formData = {
+          nama: document.getElementById("nama").value.trim(),
+          email: document.getElementById("email").value.trim(),
+          phone: document.getElementById("phone").value.trim(),
+          subject: document.getElementById("subject").value.trim(),
+          pesan: document.getElementById("pesan").value.trim(),
+        };
+
+        let error = {};
+        // Cek inputan, jika kosong maka error bernilai true
+        for (data in formData) {
+          formData[data] == "" ? (error[data] = true) : (error[data] = false);
+        }
+
+        // Cek semua error, dan ambil tindakan sesuai kondisi error tersebut
+        error.nama || error.email || error.phone || error.subject || error.pesan
+          ? alert("Semua Inputan Harus Diisi !")
+          : sendMail(formData);
+      });
+
+      // Membuat fungsi untuk mengirim email
+      const sendMail = (data) => {
+        // menyimpan dulu hasil data dari form ke dalam variabel, baru dipanggil saat membuka mailto
+        let body = `Hello my name ${data.nama}, ${data.subject}, ${data.pesan}. I'm very happy if you want to contact me at ${data.phone} / ${data.email}.`;
+
+        window.open(
+          `mailto:sidikrudini16@gmail.com?subject=${data.subject}&body=${body}`
+        );
+      };
+    </script>
+  </body>
+</html>
