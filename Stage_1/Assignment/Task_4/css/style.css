@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e7e9e7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================= */
+/*      NavBar       */
+/* ----------------- */
+nav {
+  margin: 0;
+  background-color: #f6f3f0;
+  padding: 3px 0;
+  font-size: large;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0 40px 0 40px;
+}
+.nav-item img {
+  width: 50px;
+}
+.nav-item li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 125px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+.nav-item .active {
+  font-weight: bold;
+}
+.nav-item .contactme-button {
+  width: 100%;
+  display: flex !important;
+  justify-content: flex-end;
+}
+button {
+  color: white;
+  border: none;
+  background-color: #0e262c;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* ----------------- */
+/*   End of NavBar   */
+/* ================= */
+
+/* ================= */
+/* Intro Card */
+/* ----------------- */
+#intro {
+  width: 80%;
+  margin: 5% auto;
+  padding: 50px 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.349);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.intro-text {
+  width: 60%;
+  padding: 25px;
+}
+.intro-text p {
+  text-align: justify;
+}
+#contact-button {
+  text-decoration: none;
+}
+#contact-button button {
+  font-size: larger;
+  background-color: #0e262c;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  border: 1px solid transparent;
+}
+#contact-button button:hover {
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.intro-text #download-button {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #0e262c;
+  font-size: larger;
+}
+.intro-text #download-button:hover p {
+  text-decoration: underline;
+}
+.intro-text #download-button p {
+  display: inline-block;
+}
+.intro-text #download-button img {
+  display: inline-block;
+  width: 1.3em;
+  height: 1.1em;
+  margin-bottom: -4px;
+  margin-left: 10px;
+}
+.social-media {
+  margin-top: 50px;
+  width: 100%;
+}
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.social-media img:hover {
+  border: 2px solid orange;
+}
+.intro-card {
+  width: 40%;
+  margin: 25px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.192);
+  border-radius: 10px;
+}
+.card-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.card-body {
+  text-align: center;
+}
+.card-body h1 {
+  margin-bottom: 0;
+}
+.card-body p {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+/* ----------------- */
+/* End of Intro Card */
+/* ================= */
+
+/* ================= */
+/* Contact Form & Project Form */
+/* ----------------- */
+#contact-form,
+#project-form {
+  width: 30%;
+  margin: auto;
+}
+.form-title {
+  width: 100%;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form label,
+.form input,
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+}
+.form label {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form .text-input {
+  padding: 5px 5px;
+  font-size: 1.2em;
+  border: 1px solid transparent;
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.295);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.form .submit-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.form button {
+  margin-top: 15px;
+  font-size: large;
+  border-radius: 25px;
+  border: 2px solid #0e262c;
+  padding: 5px 25px;
+  background-color: #0e262c;
+  color: white;
+  cursor: pointer;
+}
+.form .date {
+  width: 48%;
+  display: inline-block;
+}
+.form .checkbox-list {
+  width: 50%;
+  position: relative;
+}
+.form .checkbox-list input {
+  display: inline;
+  width: auto;
+}
+.form .checkbox-list label {
+  display: inline;
+  margin-left: 5px;
+}
+/* ----------------- */
+/* End of Contact Form & Project Form */
+/* ================= */
+
+/* ================= */
+/* Project Display */
+/* ----------------- */
+#project-display {
+  background-color: transparent;
+  margin: 0 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#project-display .project-title {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+  font-size: xx-large;
+}
+#project-display .project-img {
+  width: 60%;
+  height: 500px;
+  object-fit: cover;
+}
+#project-display .project-detail {
+  width: 35%;
+}
+#project-display .project-detail .title {
+  margin: 0;
+  width: 100%;
+}
+#project-display .project-detail .duration p {
+  margin: 10px 0;
+}
+#project-display .project-detail .technologies {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#project-display .project-detail .technologies p {
+  display: inline-block;
+  width: 50%;
+  margin: 10px 0;
+}
+#project-display .project-desc {
+  width: 100%;
+  text-align: justify;
+  margin: 50px 0;
+}
+#project-display .project-desc p {
+  margin: 0;
+}
+/* ----------------- */
+/* End of Project Display */
+/* ================= */
