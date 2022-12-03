@@ -1,0 +1,7 @@
+.bg-orange {
+    background-color: orangered !important;
+}
+
+.nav-item a.active {
+    color: orangered !important;
+}
